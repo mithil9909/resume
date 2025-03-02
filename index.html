@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameVault - Free Gaming Hub</title>
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body style="margin:0;font-family:Arial;background:#0f0f0f;color:white;">
+    <nav style="background:#000;padding:1rem;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;">
+        <div style="display:flex;align-items:center;">
+            <h1 style="margin:0;color:#00ff88;font-size:1.8rem;animation: float 4s ease-in-out infinite;">🎮 GameVault</h1>
+            <div style="margin-left:3rem;">
+                <a href="index.html" style="color:#00ff88;margin:0 1.5rem;text-decoration:none;">Home</a>
+                <a href="action.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Action</a>
+                <a href="battleroyale.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Battle Royale</a>
+                <a href="rpg.html" style="color:white;margin:0 1.5rem;text-decoration:none;">RPG</a>
+                <a href="strategy.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Strategy</a>
+                <a href="sports.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Sports</a>
+            </div>
+        </div>
+        <input type="search" placeholder="Search 2000+ games..." 
+               style="padding:0.8rem;border-radius:25px;border:none;width:300px;background:#222;color:white;">
+    </nav>
+
+    <div style="background:linear-gradient(rgba(0,0,0,0.7), url('https://images.unsplash.com/photo-1538481199705-c710c4e965fc');background-size:cover;height:70vh;display:flex;align-items:center;justify-content:center;flex-direction:column;">
+        <h1 style="font-size:3.5rem;margin:0;text-align:center;animation: fadeIn 1s ease-out;">Play Free Forever</h1>
+        <p style="font-size:1.2rem;margin:1rem 0;animation: fadeIn 1.5s ease-out;">Discover 2000+ free-to-play games across all genres</p>
+        <button style="padding:1rem 2rem;background:#00ff88;border:none;border-radius:30px;cursor:pointer;font-weight:bold;transition:transform 0.3s;animation: fadeIn 2s ease-out;" 
+                onmouseover="this.style.transform='scale(1.1)'" 
+                onmouseout="this.style.transform='scale(1)'">Explore Trending Games</button>
+    </div>
+
+    <div style="padding:4rem 2rem;max-width:1400px;margin:0 auto;">
+        <h2 style="text-align:center;font-size:2rem;animation: fadeIn 2.5s ease-out;">Popular Categories</h2>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:2rem;margin-top:3rem;">
+            <div style="background:#1a1a1a;border-radius:15px;overflow:hidden;transition:transform 0.3s;cursor:pointer;animation: fadeIn 3s ease-out;" 
+                 onmouseover="this.style.transform='rotateZ(0.5deg) scale(1.05)';this.style.boxShadow='0 10px 20px rgba(0,255,136,0.2)'" 
+                 onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvuSlcbZikicdndMQXJFKPSMTHNd4sUwpu_w&s" 
+                     alt="Action" style="width:100%;height:200px;object-fit:cover;">
+                <div style="padding:1.5rem;">
+                    <h3 style="color:#00ff88;margin:0;">🔥 Action Games</h3>
+                    <p style="margin:0.5rem 0 1rem;">1200+ adrenaline-pumping titles</p>
+                    <a href="action.html" style="color:#00ff88;text-decoration:none;">Browse Now →</a>
+                </div>
+            </div>
+            <div style="background:#1a1a1a;border-radius:15px;overflow:hidden;transition:transform 0.3s;cursor:pointer;animation: fadeIn 3.2s ease-out;" 
+                 onmouseover="this.style.transform='rotateZ(0.5deg) scale(1.05)';this.style.boxShadow='0 10px 20px rgba(0,255,136,0.2)'" 
+                 onmouseout="this.style.transform='none';this.style.boxShadow='none'">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg?t=1736940058" 
+                     alt="Battle Royale" style="width:100%;height:200px;object-fit:cover;">
+                <div style="padding:1.5rem;">
+                    <h3 style="color:#00ff88;margin:0;">💥 Battle Royale</h3>
+                    <p style="margin:0.5rem 0 1rem;">Last player standing wins</p>
+                    <a href="battleroyale.html" style="color:#00ff88;text-decoration:none;">Browse Now →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
