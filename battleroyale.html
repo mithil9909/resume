@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battle Royale Games - GameVault</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        Page-specific animation
+        @keyframes dropIn {
+            0% { transform: translateY(-100px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+        .game-card { animation: dropIn 0.8s ease-out; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <a href="index.html" style="color:#00ff88;margin:0 1.5rem;text-decoration:none;">Home</a>
+                <a href="action.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Action</a>
+                <a href="battleroyale.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Battle Royale</a>
+                <a href="rpg.html" style="color:white;margin:0 1.5rem;text-decoration:none;">RPG</a>
+                <a href="strategy.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Strategy</a>
+                <a href="sports.html" style="color:white;margin:0 1.5rem;text-decoration:none;">Sports</a>
+            </div>
+        <input type="search" class="search-bar" placeholder="Search action games...">
+    </nav>
+
+    <div class="game-header" style="background-image: url('https://images.unsplash.com/photo-1574267432553-4b4628081c31')">
+        <h1>🔥 Top Battle Royale Games</h1>
+        <p>Last Player Standing Wins! 100% Free to Play</p>
+    </div>
+
+    <div class="game-list">
+        <div class="game-card">
+            <img src="https://cdn1.epicgames.com/offer/fn/FNBR_34-00_C6S2_EGS_Launcher_KeyArt_FNlogo_Blade_2560x1440_2560x1440-616cc879dcc03a6afc2f9edfff55eab9?resize=1&w=480&h=270&quality=medium" 
+                 alt="Fortnite" class="game-image">
+            <div class="game-info">
+                <h2>Fortnite</h2>
+                <p>Build, battle, and survive in this iconic BR game</p>
+                <div class="platform-tags">
+                    <span class="platform-tag">PC</span>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">Xbox</span>
+                    <span class="platform-tag">Mobile</span>
+                </div>
+                <a href="https://www.fortnite.com/download" class="download-btn">Download Free</a>
+            </div>
+        </div>
+        <div class="game-card">
+            <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1172470/header.jpg?t=1736940058" 
+                 alt="Apex Legends" class="game-image">
+            <div class="game-info">
+                <h2>Apex Legends</h2>
+                <p>Team-based hero shooter battle royale</p>
+                <div class="platform-tags">
+                    <span class="platform-tag">PC</span>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">Xbox</span>
+                </div>
+                <a href="https://www.ea.com/games/apex-legends" class="download-btn">Download Now</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://skylinepost.org/wp-content/uploads/2025/02/lTe3c3paRnaEXpDIfhl9We7scmqZM7WDWwlDBAs7.jpg" 
+                 alt="PUBG" class="game-image">
+            <div class="game-info">
+                <h2>PUBG: BATTLEGROUNDS</h2>
+                <p>The original military-style battle royale</p>
+                <div class="platform-tags">
+                    <span class="platform-tag">PC</span>
+                    <span class="platform-tag">Mobile</span>
+                </div>
+                <a href="https://pubg.com/en-na" class="download-btn">Play Free</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/2400/ac505d57a46e24dd96712263d89a150cb443af288c025ff2.jpg" 
+                 alt="Warzone" class="game-image">
+            <div class="game-info">
+                <h2>Call of Duty: Warzone</h2>
+                <p>Modern combat BR with 150 players</p>
+                <div class="platform-tags">
+                    <span class="platform-tag">PC</span>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">Xbox</span>
+                </div>
+                <a href="https://www.callofduty.com/warzone" class="download-btn">Download Free</a>
+            </div>
+        </div>
+
+        <div class="game-card">
+            <img src="https://cdn1.epicgames.com/offer/50118b7f954e450f8823df1614b24e80/FGSS04_KeyArt_OfferImageLandscape_2560x1440_2560x1440-89c8edd4ffe307f5d760f286a28c3404" 
+                 alt="Fall Guys" class="game-image">
+            <div class="game-info">
+                <h2>Fall Guys</h2>
+                <p>Chaotic 60-player obstacle course BR</p>
+                <div class="platform-tags">
+                    <span class="platform-tag">PC</span>
+                    <span class="platform-tag">PS5</span>
+                    <span class="platform-tag">Switch</span>
+                </div>
+                <a href="https://fallguys.com" class="download-btn">Download Free</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

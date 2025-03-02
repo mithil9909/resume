@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+nav {
+    background: #000;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00ff88;
+}
+
+.search-bar {
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    border: none;
+    background: #222;
+    color: white;
+    width: 300px;
+    outline: none;
+}
+
+/* Ensures game cards are properly aligned */
+.game-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the cards */
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Adjusted width to match strategy.html */
+.game-card {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 1.5rem;
+    max-width: 900px;
+    width: 90%;
+    display: flex;
+    gap: 2rem;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.game-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+}
+
+.game-image {
+    width: 250px; /* Adjusted to match other pages */
+    height: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.platform-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.platform-tag {
+    background: rgba(0, 255, 136, 0.1);
+    color: #00ff88;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.download-btn {
+    background: #00ff88;
+    color: #000;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    align-self: flex-start;
+    margin-top: 1rem;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+}
+
+@media (max-width: 768px) {
+    .game-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .game-image {
+        width: 100%;
+        height: auto;
+    }
+}
